@@ -1,0 +1,27 @@
+navya@1204S
+navyagusus220118@gmail.com
+
+
+navyagusus220118@gmail.com
+ABCabc012345@ 
+
+
+
+nkakarla@students.kennesaw.edu
+001052256.KSU
+Navya1204@
+
+17395-35401-02263-84279-22217
+
+
+navyakakarla416@gmail.com
+navya@1998
+
+This is the only time you can view this password. Copy and save the password for your reference. If you lose the password, you must modify your database to change it. You can use a SQL client application or utility to connect to your database.
+Learn about connecting to your database 
+Master username
+admin1996
+Master password
+asdflkjhCopy
+Endpoint
+database-1996.cluster-c9csuooaqmqt.us-east-1.rds.amazonaws.com

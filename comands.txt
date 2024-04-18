@@ -1,0 +1,79 @@
+Wordpress:
+Sudo su
+Apt-get update
+Apt-get upgrade
+apt install apache2
+apt install apache2 \
+                 ghostscript \
+                 libapache2-mod-php \
+                 mysql-server \
+                 php \
+                 php-bcmath \
+                 php-curl \
+                 php-imagick \
+                 php-intl \
+                 php-json \
+                 php-mbstring \
+                 php-mysql \
+                 php-xml \
+                 php-zip
+service apache2 status
+wget https://wordpress.org/latest.tar.gz
+ls
+ls -lh
+tar -xvf latest.tar.gz
+ ls
+cd /var/www/html/
+ls
+cd /home/ubuntu
+ls
+mv wordpress /var/www/html/
+service apache2 status
+ ls
+cd /var/www/html
+ls
+cat index.html
+chown -R www-data:www-data wordpress
+ls -lh
+cd /etc/apache2/
+ls
+cd sites-available
+ls
+cd /var/www/html
+ ls
+cd wordpress
+ls
+cp wp-config-sample.php wp-config.php
+ls
+vi wp-config.php
+
+
+target
+load bal
+
+
+
+
+
+
+
+
+
+
+
+
+
+mysql:
+  sudo su
+apt-get update
+apt-get upgrade
+apt install mysql-server
+mysql -u root
+
+C:\Program Files\Python311
+
+
+
+
+
+

@@ -1,0 +1,159 @@
+"C:\Users\sudhe\Downloads\Docker Desktop.lnk"
+
+ 1  apt-get update
+    2  apt-get upgrade
+    3  # Add Docker's official GPG key:
+    4  sudo apt-get update
+    5  sudo apt-get install ca-certificates curl
+    6  sudo install -m 0755 -d /etc/apt/keyrings
+    7  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+    8  sudo chmod a+r /etc/apt/keyrings/docker.asc
+    9  # Add the repository to Apt sources:
+   10  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+   11    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   12  sudo apt-get update
+   13  sudo apt-get install ca-certificates curl
+   14  sudo install -m 0755 -d /etc/apt/keyrings
+   15  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+   16  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   17  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+   18    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   19  sudo apt-get update
+   20  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   21  sudo docker run hello-world
+   22  docker ps
+   23  docker ps -a
+   24  sudo usermod -aG docker $USER
+   25  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+   26  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+   27  minikube version
+   28  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+   29  chmod +x kubectl
+   30  sudo mv kubectl /usr/local/bin/
+   31  kubectl version -o yaml
+   32  minikube start --driver=docker
+   33  minikube start --driver=docker --force
+   34  minikube status
+   35  kubectl get nodes
+   36  kubectl describe node minikube
+   37  kubectl get namespaces
+   38  kubectl get pods -a
+   39  kubectl get pods
+   40  kubectl get pods -A
+   41  kubectl get pods -n kube-node-lease
+   42  kubectl get pods -n default
+   43  kubectl create deployment nginx-web --image=nginx
+   44  kubectl get all
+   45  kubectl describe pod/nginx-web-5b757f798d-6zp5z
+   46  kubectl expose deployment nginx-web --type NodePort --port=80
+   47  kubectl get all
+   48  kubectl get pods -n default
+   49  kubectl exec -it
+   50  nginx-web-5b757f798d-6zp5z
+   51  kubectl exec -it nginx-web-5b757f798d-6zp5z -n default /bin/bash
+   52  apt-get update
+   53  docker ps -A
+   54  docker ps -a
+   55  kubectl exec -it nginx-web-5b757f798d-6zp5z -n default /bin/bash
+   56  minikube start --driver=docker
+   57  minikube start --driver=docker –force
+   58  minikube start --driver=docker
+   59  minikube start --driver=docker –force
+   60  kubectl get all
+   61  kubectl get all -A
+   62  kubectl get all pods
+   63  kubectl get all
+   64  apt-get update
+   65  apt-get upgrade
+   66  sudo apt-get update
+   67  sudo apt-get install ca-certificates curl
+   68  sudo install -m 0755 -d /etc/apt/keyrings
+   69  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+   70  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   71  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+   72    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   73  sudo apt-get update
+   74  docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   75  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   76  sudo docker run hello-world
+   77  docker ps
+   78  docker ps -a
+   79  sudo usermod -aG docker $USER
+   80  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+   81  sudo install minikube-linux-amd64 /usr/local/bin/minikube
+   82  minikube version
+   83  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+   84  chmod +x kubectl
+   85  sudo mv kubectl /usr/local/bin/
+   86  kubectl version -o yaml
+   87  minikube start --driver=docker
+   88  minikube start --driver=docker –force
+   89  minikube status
+   90  minikube start --driver=docker –force
+   91  minikube start --driver=docker
+   92  minikube start --driver=docker –force
+   93  minikube status
+   94  kubectl get nodes
+   95  kubectl describe node minikube
+   96  kubectl get namespaces
+   97  kubectl get pods
+   98  kubectl get pods -a
+   99  kubectl get pods -A
+  100  kubectl get pods -n kube-node-lease
+  101  kubectl get pods -n default
+  102  kubectl create deployment nginx-web --image=nginx
+  103  kubectl get all
+  104  kubectl describe pod/nginx-web-5b757f798d-6zp5z
+  105  kubectl expose deployment nginx-web --type NodePort --port=80
+  106  kubectl get all
+  107  kubectl get pods -n default
+  108  kubectl exec -it nginx-web-5b757f798d-6zp5z -n default /bin/bash
+  109  kubectl get all -A
+  110   kubectl edit  deployment.apps/nginx-web -n default
+  111  kubectl create ns traningnavya
+  112  kubectl get ns
+  113  ls
+  114  mkdir nginx
+  115  cd nginx/
+  116  vi deployment.yaml
+  117  vi service.yaml
+  118  kubectl apply -f deployment.yaml
+  119  vi deployment.yaml
+  120  kubectl apply -f deployment.yaml
+  121  vi deployment.yaml
+  122  kubectl apply -f deployment.yaml
+  123  vi deployment.yaml
+  124  kubectl apply -f deployment.yaml
+  125  kubectl apply -f service.yaml -n traningnavya
+  126  kubectl get all -n traningnavya
+  127  vi deployment.yaml
+  128  vi service.yaml
+  129  kubectl get all -n traningnavya
+  130  vi service.yaml
+  131  kubectl apply -f deployment.yaml
+  132  kubectl apply -f service.yaml -n traningnavya
+  133  kubectl get all -n traningnavya
+  134  kubectl edit service/nginx-traning-service -n traningnavya
+  135  kubectl get all -n traningnavya
+  136  minikube addons list
+  137  minikube addons enable dashboard
+  138  minikube addons enable ingress
+  139  minikube addons  metrics-server
+  140  minikube addons enable metrics-server
+  141  kubectl get all -A
+  142  kubectl get ns
+  143  kubectl get all -n kube-system
+  144  kubectl get ns
+  145  kubectl get all -n kubernetes-dashboard
+  146  kubectl edit service service/kubernetes-dashboard -n kubernetes-dashboard
+  147  kubectl edit service/kubernetes-dashboard -n kubernetes-dashboard
+  148  kubectl get all -n kubernetes-dashboard
+  149  minikube ip
+  150  kubectl get all -A
+  151  curl 192.168.49.2:32286
+  152  ls
+  153  vi deployment.yaml
+  154  kubectl get all -n apps/v1
+  155  kubectl get all -n traningnavya
+  156  history
+root@ip-10-0-1-167:/home/ubuntu/nginx#
